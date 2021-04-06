@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script>
+        var n1, n2, n3;
+
+        n1 = prompt("Ingresa el primer número");
+        n2 = prompt("Ingresa el segundo número");
+        n3 = prompt("Ingresa el tercer número");
+
+        while(n1 != n2 && n2 != n3 && n1 != n3){
+                
+            if(n1>n2 && n1>n3){
+                document.write("El número mayor es "+n1);
+            }else{
+                if(n2>n1 && n2>n3){
+                    document.write("El número mayor es "+n2);
+                }else{
+                    document.write("El número mayor es "+n3);
+                }
+            }
+        }
+
+        document.write("Algún numero es igual a otro");
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script>
+        var salario, tiempo, utilidad;
+
+        salario = prompt("Ingresa tu salario ");
+        tiempo = prompt("Ingresa el tiempo que has estado dentro de la empresa ");
+
+        if(salario>0 && tiempo>0){  
+            if(tiempo<1){
+                utilidad = parseInt(salario)*0.05;  
+                document.write("<center>");
+                document.write("La utilidad por "+tiempo+" años es de $"+utilidad);     
+            }else{
+                if(tiempo>=1 && tiempo<2){
+                    utilidad = parseInt(salario)*0.07;
+                    document.write("<center>");
+                    document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                }else{
+                    if(tiempo>=2 && tiempo<5){
+                        utilidad = parseInt(salario)*0.10;
+                        document.write("<center>");
+                        document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                    }else{
+                        if(tiempo>=5 && tiempo<10){
+                            utilidad = parseInt(salario)*0.15;
+                            document.write("<center>");
+                            document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                        }else{
+                            utilidad = parseInt(salario)*0.20;
+                            document.write("<center>");
+                            document.write("La utilidad por "+tiempo+" años es de $"+utilidad);
+                        }
+                    }
+                }
+            }
+        }else{
+            document.write("<center>");
+            document.write("Ingrese valores positivos");
+        }
+    </script>
+</body>
+</html>

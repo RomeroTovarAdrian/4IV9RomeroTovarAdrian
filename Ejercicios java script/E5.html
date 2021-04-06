@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script>
+        var hombres, mujeres, phombres, pmujeres, total;
+
+        hombres = prompt("Ingresa el numero de hombres que hay ");
+        mujeres = prompt("Ingresa el numero de mujeres que hay ");
+
+        total = parseInt(hombres)+parseInt(mujeres);
+        phombres = (parseInt(hombres)/parseInt(total))*100;
+        pmujeres = (parseInt(mujeres)/parseInt(total))*100;
+
+        document.write("<center>");
+        document.write("El porcentaje de hombres es de "+ phombres +"% ");
+        document.write("<br>");
+        document.write("El porcentaje de mujeres es de "+ pmujeres +"% ");
+
+    </script>
+</body>
+</html>

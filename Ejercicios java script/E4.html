@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script>
+        var parciales, examen, trabajo, sumatoria, total;
+
+        parciales = prompt("Ingresa el promedio de tus tres parciales ");
+        examen = prompt("Ingresa la calificación del examen final ");
+        trabajo = prompt("Ingresa la calificación del trabajo final ");
+
+        sumatoria = parseInt(parciales + examen + trabajo);
+        total = parseInt((parciales*0.55)+(examen*0.30)+(trabajo*0.15));
+
+        document.write("<center>")
+        document.write("La calificación final es de "+total);
+    </script>
+</body>
+</html>

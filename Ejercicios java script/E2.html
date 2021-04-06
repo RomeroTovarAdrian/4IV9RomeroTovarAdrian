@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script>
+    var sueldo, venta1, venta2, venta3, comision, total;
+
+    venta1 = prompt("Ingresa el pago por la venta 1 ");
+    venta2 = prompt("Ingresa el pago por la venta 2 ");
+    venta3 = prompt("Ingresa el pago por la venta 3 ");
+    sueldo = prompt("Ingresa el sueldo base ");
+
+    comision = parseInt(venta1 + venta2 + venta3)*0.10;
+    total = parseInt(sueldo + comision);
+
+    document.write("<center>");
+    document.write("El sueldo base es de $"+sueldo);
+    document.write("<br>");
+    document.write("La comision por mes es de $"+comision);
+    document.write("<br>");
+    document.write("El sueldo total es de  $"+total);
+</script>
+</body>
+</html>
