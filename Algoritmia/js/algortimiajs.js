@@ -77,6 +77,54 @@ function problema2(){
 
 }
 
+function problema3(){
+    let abc = [];
+    var avance = true;
+    /* 29.- Se consigue la cadena de texto */
+    var result = document.getElementById('volumen').value;
+    /* Se verifica que no tenga espacios y tiene que terminar con una "," (30-36) */
+    if (result.includes(' ')) {
+        alert('Borre los espacios')
+        avance = false;
+    } else { avance = true }
+    /* Ultimo caracter ingresado debe ser una coma */
+    if (result.charAt(result.length - 1) == ',' && avance == true) {
+        /* Elimina las comas y crea un array con las palabras */
+        var diccionary = result.split(',');
+        console.log(diccionary)
+        /* Variables contar el numero de caracteres unicos */
+        let palabra = '';
+        let letra = '';
+        /* Recorre el array de palabras (input) */
+        diccionary.forEach((element) => {
+            /* Cada ciclo se borrara los caracteres de palabra */
+            palabra = '';
+            /* Obtener el caracter de cada palabra y lo suma al string de palabra (50-51)
+            si este caracter ya lo posee no se le suma(53-55) */
+            for (var i = 0; i <= element.length - 1; i++) {
+                letra = element.charAt(i)
+                if (palabra.includes(letra) == false) {
+                    palabra += letra
+                }
+                if (i == 50) { break }
+            }
+            /* Se cuenta los caracteres de la variable 'palabra' (ya no contiene caracteres repetidos) */
+            /* Este numero se agrega al array (61) */
+            abc.push(palabra.length)
+        });
+        /* 'mayor' se usara para saber cual es el numero mayor que se le stuvieron agrgando los numeros  */
+        var mayor = Math.max(...abc);
+        var posiscionPalabra = abc.indexOf(mayor);
+        /* Lo unico que falta es que actualizen el valor de la palabra con mas caracteres unicos
+        seria algo asi: 
+
+        document.getElementById('id de su input').value = `La palabra con mas caracteres es: 
+        ${diccionary[posicionPalabra]}
+        ` */
+        console.log(Math.max(...abc))
+    } else { alert('Tiene que terminar en coma') }
+
+}
 /*
 problema 3
 primero mi alfabeto a - z
