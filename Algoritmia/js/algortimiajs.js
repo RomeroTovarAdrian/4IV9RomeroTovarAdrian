@@ -78,7 +78,6 @@ function problema2(){
 }
 
 function problema3(){
-maxim();{
     let abc = [];
     var avance = true;
     /* 29.- Se consigue la cadena de texto */
@@ -128,7 +127,6 @@ maxim();{
         console.log(Math.max(...abc))
     } else { alert('Tiene que terminar en coma') }
 
-}
 }
 /*
 problema 3
