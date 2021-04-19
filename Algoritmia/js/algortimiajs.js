@@ -81,7 +81,7 @@ function problema3(){
     let abc = [];
     var avance = true;
     /* 29.- Se consigue la cadena de texto */
-    var result = document.getElementById('p3-input').value;
+    var result = document.getElementById('volumen').value;
     /* Se verifica que no tenga espacios y tiene que terminar con una "," (30-36) */
     if (result.includes(' ')) {
         alert('Borre los espacios')
@@ -117,11 +117,10 @@ function problema3(){
         var posiscionPalabra = abc.indexOf(mayor);
         /* Lo unico que falta es que actualizen el valor de la palabra con mas caracteres unicos
         seria algo asi: 
-        
 
-        document.getElementById('p3-output').value = `La palabra con mas caracteres es: 
+        document.getElementById('id de su input').value = `La palabra con mas caracteres es: 
         ${diccionary[posicionPalabra]}
-        `*/
+        ` */
         console.log(Math.max(...abc))
     } else { alert('Tiene que terminar en coma') }
 
