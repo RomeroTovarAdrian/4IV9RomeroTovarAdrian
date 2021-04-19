@@ -118,8 +118,7 @@ function problema3(){
         /* Lo unico que falta es que actualizen el valor de la palabra con mas caracteres unicos
         seria algo asi: 
         */
-
-        document.getElementById('p3-output').value = `La palabra con mas caracteres es: 
+        document.getElementById('id de su input').value = `La palabra con mas caracteres es: 
         ${diccionary[posicionPalabra]}
         `
         console.log(Math.max(...abc))
