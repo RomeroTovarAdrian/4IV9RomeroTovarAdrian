@@ -81,7 +81,7 @@ function problema3(){
     let abc = [];
     var avance = true;
     /* 29.- Se consigue la cadena de texto */
-    var result = document.getElementById('volumen').value;
+    var result = document.getElementById('p3-input').value;
     /* Se verifica que no tenga espacios y tiene que terminar con una "," (30-36) */
     if (result.includes(' ')) {
         alert('Borre los espacios')
@@ -119,7 +119,7 @@ function problema3(){
         seria algo asi: 
         */
 
-        document.getElementById('p3-input').value = `La palabra con mas caracteres es: 
+        document.getElementById('p3-output').value = `La palabra con mas caracteres es: 
         ${diccionary[posicionPalabra]}
         `
         console.log(Math.max(...abc))
