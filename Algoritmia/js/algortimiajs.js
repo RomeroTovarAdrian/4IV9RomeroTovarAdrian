@@ -117,11 +117,11 @@ function problema3(){
         var posiscionPalabra = abc.indexOf(mayor);
         /* Lo unico que falta es que actualizen el valor de la palabra con mas caracteres unicos
         seria algo asi: 
-        */
+        
 
         document.getElementById('p3-output').value = `La palabra con mas caracteres es: 
         ${diccionary[posicionPalabra]}
-        `
+        `*/
         console.log(Math.max(...abc))
     } else { alert('Tiene que terminar en coma') }
 
