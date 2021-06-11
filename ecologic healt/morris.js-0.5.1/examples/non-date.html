@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="../morris.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+  <script src="lib/example.js"></script>
+  <link rel="stylesheet" href="lib/example.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+  <link rel="stylesheet" href="../morris.css">
+</head>
+<body>
+<h1>Formatting Non-date Arbitrary X-axis</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+var day_data = [
+  {x: "I", "value": 34},
+  {x: "II", "value": 24},
+  {x: "III", "value": 3},
+  {x: "IV", "value": 12},
+  {x: "V", "value": 13},
+  {x: "VI", "value": 22},
+  {x: "VII", "value": 5},
+  {x: "VIII", "value": 26},
+  {x: "IX", "value": 12},
+  {x: "X", "value": 19}
+];
+Morris.Line({
+  element: 'graph',
+  data: day_data,
+  xkey: 'elapsed',
+  ykeys: ['value'],
+  labels: ['value'],
+  parseTime: false
+});
+</pre>
+</body>
